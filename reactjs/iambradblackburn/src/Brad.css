@@ -1,10 +1,77 @@
+.bradPre {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+  background-color: blue;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.bradPre-wrapper {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.bradPre-wrapper > span {
+  font-weight: bold;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+}
+
+.bradPre > span {
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+}
+
+.bradPre.full-preloader {
+  width: 100%;
+}
+
+.bradPre.bradPre-loaded {
+  right: 0;
+  left: auto;
+  width: 0;
+}
+
+.bradPre.bradPre-loaded > span {
+  right: 0;
+  left: auto;
+}
+
 .Brad {
   text-align: center;
 }
 
 .Brad-logo {
-  animation: Brad-logo-spin infinite 20s linear;
-  height: 40vmin;
+  /* animation: Brad-logo-spin infinite 20s linear;
+  height: 40vmin; */
+  width: 100%;
+  max-width: 500px;
   pointer-events: none;
 }
 

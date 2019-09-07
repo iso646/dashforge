@@ -1,0 +1,3 @@
+[submodule "reactjs/iambradblackburn/iambradblackburn"]
+	path = reactjs/iambradblackburn/iambradblackburn
+	url = git@github.com:iambradblackburn/iambradblackburn.git
